@@ -9,7 +9,7 @@ Dehong Kong<sup>1,2</sup>, Fan Li<sup>3</sup>, Zhixin Wang<sup>3</sup>, Jiaqi Xu
 :star: Code is coming soon! 
 If DPIR is helpful to your images or projects, please help star this repo. Thanks!
 
-#### 🚩Accepted by CVPR2024
+#### 🚩Accepted by CVPR2025
 
 ## 🔎 Overview framework
 
