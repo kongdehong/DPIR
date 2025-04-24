@@ -1,11 +1,9 @@
 ## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
 
-&#x20;  
-&#x20;
-Dehong Kong1,2, Fan Li3,†,Zhixin Wang3, Jiaqi Xu4, Renjing Pei3, Wenbo Li3, WenQi Ren1,2,5
-1 School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University
-2MoE Key Laboratory of Information Technology 3Huawei Noah’s Ark Lab 4 The Chinese University of Hong Kong
-5 Guangdong Provincial Key Laboratory of Information Security Technology
+Dehong Kong<sup>1,2<sup>, Fan Li<sup>3<sup>,Zhixin Wang<sup>3<sup>, Jiaqi Xu<sup>4<sup>, Renjing Pei<sup>3<sup>, Wenbo Li<sup>3<sup>, WenQi Ren<sup>1,2,5<sup>
+<sup>1<sup>School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University
+<sup>2<sup>MoE Key Laboratory of Information Technology <sup>3<sup>Huawei Noah’s Ark Lab <sup>4<sup>The Chinese University of Hong Kong
+<sup>5<sup>Guangdong Provincial Key Laboratory of Information Security Technology
 
 :star: If DPIR is helpful to your images or projects, please help star this repo. Thanks!
 
@@ -16,9 +14,6 @@ Dehong Kong1,2, Fan Li3,†,Zhixin Wang3, Jiaqi Xu4, Renjing Pei3, Wenbo Li3, We
 ![seesr](figs/framework.png)
 
 ## 📷 Real-World Results
-
-&#x20;
-&#x20;
 
 ![seesr](figs/data_real_suppl.jpg)
 
@@ -37,172 +32,24 @@ Dehong Kong1,2, Fan Li3,†,Zhixin Wang3, Jiaqi Xu4, Renjing Pei3, Wenbo Li3, We
 
 #### Step 1: Download the pretrained models
 
-- Download the pretrained SD-2-base models from [HuggingFace](https://huggingface.co/stabilityai/stable-diffusion-2-base).
-
-- Download the SeeSR and DAPE models from [GoogleDrive](https://drive.google.com/drive/folders/12HXrRGEXUAnmHRaf0bIn-S8XSK4Ku0JO?usp=drive_link) or [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EiUmSfWRmQFNiTGJWs7rOx0BpZn2xhoKN6tXFmTSGJ4Jfw?e=RdLbvg).
-
-You can put the models into `preset/models`.
+- Download the pretrained models from...
 
 #### Step 2: Prepare testing data
 
-You can put the testing images in the `preset/datasets/test_datasets`.
+You can put the testing images in the...
 
 #### Step 3: Running testing command
 
-    python test_seesr.py \
-    --pretrained_model_path preset/models/stable-diffusion-2-base \
-    --prompt '' \
-    --seesr_model_path preset/models/seesr \
-    --ram_ft_path preset/models/DAPE.pth \
-    --image_path preset/datasets/test_datasets \
-    --output_dir preset/datasets/output \
-    --start_point lr \
-    --num_inference_steps 50 \
-    --guidance_scale 5.5 \
-    --process_size 512
-
-More details are [here](asserts/hyp.md)
-
-#### Step-sd-turbo
-
-Just download the weights from [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), and put them into `preset/models`. Then, you can run the command. More comparisons can be found [here](asserts/turbo.md). Note that the `guidance_scale` is fixed to `1.0` in turbo mode.
-
-    python test_seesr_turbo.py \
-    --pretrained_model_path preset/models/sd-turbo \
-    --prompt '' \
-    --seesr_model_path preset/models/seesr \
-    --ram_ft_path preset/models/DAPE.pth \
-    --image_path preset/datasets/test_datasets \
-    --output_dir preset/datasets/output \
-    --start_point lr \
-    --num_inference_steps 2 \
-    --guidance_scale 1.0 \
-    --process_size 512
-
-&#x20;
-
-#### Note
-
-Please read the arguments in `test_seesr.py` carefully. We adopt the tiled vae method proposed by [multidiffusion-upscaler-for-automatic1111](https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111) to save GPU memory.
-
-#### Gradio Demo
-
-Please put the all pretrained models at `preset/models`, and then run the following command to interact with the gradio website.
-
-    python gradio_seesr.py
-
-We also provide gradio with [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), have fun. 🤗
-
-    python gradio_seesr_turbo.py
-
-![seesr](figs/gradio.png)
-
-#### Test Benchmark
-
-We release our `RealLR200` at [GoogleDrive](https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link) and [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx). You can download `RealSR` and `DRealSR` from [StableSR](https://huggingface.co/datasets/Iceclear/StableSR-TestSets). We also provide the copy of that at [GoogleDrive](https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link) and [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx). As for the synthetic test set, you can obtain it through the synthetic methods described below.
+    python test_.py
 
 ## 🌈 Train
 
-#### Step1: Download the pretrained models
-
-Download the pretrained [SD-2-base models](https://huggingface.co/stabilityai/stable-diffusion-2-base) and [RAM](https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth). You can put them into `preset/models`.
-
-#### Step2: Prepare training data
-
-We pre-prepare training data pairs for the training process, which would take up some memory space but save training time. We train the DAPE with [COCO](https://cocodataset.org/#home) and train the SeeSR with LSDIR+FFHQ10k.
-
-For making paired data when training DAPE, you can run:
-
-    python utils_data/make_paired_data_DAPE.py \
-    --gt_path PATH_1 PATH_2 ... \
-    --save_dir preset/datasets/train_datasets/training_for_dape \
-    --epoch 1
-
-For making paired data when training SeeSR, you can run:
-
-    python utils_data/make_paired_data.py \
-    --gt_path PATH_1 PATH_2 ... \
-    --save_dir preset/datasets/train_datasets/training_for_dape \
-    --epoch 1
-
-- `--gt_path` the path of gt images. If you have multi gt dirs, you can set it as `PATH1 PATH2 PATH3 ...`
-
-- `--save_dir` the path of paired images
-
-- `--epoch` the number of epoch you want to make
-
-The difference between `make_paired_data_DAPE.py` and `make_paired_data.py` lies in that `make_paired_data_DAPE.py` resizes the entire image to a resolution of 512, while `make_paired_data.py` randomly crops a sub-image with a resolution of 512.
-
-Once the degraded data pairs are created, you can base them to generate tag data by running `utils_data/make_tags.py`.
-
-The data folder should be like this:
-
-    your_training_datasets/
-        └── gt
-            └── 0000001.png # GT images, (512, 512, 3)
-            └── ...
-        └── lr
-            └── 0000001.png # LR images, (512, 512, 3)
-            └── ...
-        └── tag
-            └── 0000001.txt # tag prompts
-            └── ...
-
-#### Step3: Training for DAPE
-
-Please specify the DAPE training data path at `line 13` of `basicsr/options/dape.yaml`, then run the training command:
-
-    python basicsr/train.py -opt basicsr/options/dape.yaml
-
-You can modify the parameters in `dape.yaml` to adapt to your specific situation, such as the number of GPUs, batch size, optimizer selection, etc. For more details, please refer to the settings in Basicsr.
-
-#### Step4: Training for SeeSR
-
-    CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7," accelerate launch train_seesr.py \
-    --pretrained_model_name_or_path="preset/models/stable-diffusion-2-base" \
-    --output_dir="./experience/seesr" \
-    --root_folders 'preset/datasets/training_datasets' \
-    --ram_ft_path 'preset/models/DAPE.pth' \
-    --enable_xformers_memory_efficient_attention \
-    --mixed_precision="fp16" \
-    --resolution=512 \
-    --learning_rate=5e-5 \
-    --train_batch_size=2 \
-    --gradient_accumulation_steps=2 \
-    --null_text_ratio=0.5
-    --dataloader_num_workers=0 \
-    --checkpointing_steps=10000
-
-- `--pretrained_model_name_or_path` the path of pretrained SD model from Step 1
-
-- `--root_folders` the path of your training datasets from Step 2
-
-- `--ram_ft_path` the path of your DAPE model from Step 3
-
-The overall batch size is determined by num of `CUDA_VISIBLE_DEVICES`, `--train_batch_size`, and `--gradient_accumulation_steps` collectively. If your GPU memory is limited, you can consider reducing `--train_batch_size` while increasing `--gradient_accumulation_steps`.
-
-## ❤️ Acknowledgments
-
-This project is based on [diffusers](https://github.com/huggingface/diffusers) and [BasicSR](https://github.com/XPixelGroup/BasicSR). Some codes are brought from [PASD](https://github.com/yangxy/PASD) and [RAM](https://github.com/xinyu1205/recognize-anything). Thanks for their awesome works. We also pay tribute to the pioneering work of [StableSR](https://github.com/IceClear/StableSR).
-
 ## 📧 Contact
 
-If you have any questions, please feel free to contact: `rong-yuan.wu@connect.polyu.hk`
+If you have any questions, please feel free to contact: `kongdh@mail2.sysu.edu.cn`
 
 ## 🎓Citations
 
 If our code helps your research or work, please consider citing our paper. The following are BibTeX references:
 
-    @inproceedings{wu2024seesr,
-      title={Seesr: Towards semantics-aware real-world image super-resolution},
-      author={Wu, Rongyuan and Yang, Tao and Sun, Lingchen and Zhang, Zhengqiang and Li, Shuai and Zhang, Lei},
-      booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-      pages={25456--25467},
-      year={2024}
-    }
 
-## 🎫 License
-
-This project and related weights are released under the [Apache 2.0 license](LICENSE).
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=cswry/SeeSR)
