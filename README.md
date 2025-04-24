@@ -1,41 +1,15 @@
-## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution (CVPR2024)
+## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
 
 &#x20;  
 &#x20;
+Dehong Kong1,2, Fan Li3,†,Zhixin Wang3, Jiaqi Xu4, Renjing Pei3, Wenbo Li3, WenQi Ren1,2,5
+1 School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University
+2MoE Key Laboratory of Information Technology 3Huawei Noah’s Ark Lab 4 The Chinese University of Hong Kong
+5 Guangdong Provincial Key Laboratory of Information Security Technology
 
-[Rongyuan Wu](https://scholar.google.com.hk/citations?hl=zh-CN&user=A-U8zE8AAAAJ)1,2 | [Tao Yang](https://cg.cs.tsinghua.edu.cn/people/~tyang/)3 | [Lingchen Sun](https://scholar.google.com/citations?hl=zh-CN&tzom=-480&user=ZCDjTn8AAAAJ)1,2 | [Zhengqiang Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=UX26wSMAAAAJ)1,2 | [Shuai Li](https://scholar.google.com.hk/citations?hl=zh-CN&user=Bd73ldQAAAAJ)1,2 | [Lei Zhang](https://www4.comp.polyu.edu.hk/~cslzhang/)1,2
-
-1The Hong Kong Polytechnic University, 2OPPO Research Institute, 3ByteDance Inc.
-
-:star: If SeeSR is helpful to your images or projects, please help star this repo. Thanks! :hugs:
+:star: If DPIR is helpful to your images or projects, please help star this repo. Thanks!
 
 #### 🚩Accepted by CVPR2024
-
-### 📢 News
-
-- **2024.06** Our One-Step Real-ISR work [OSEDiff](https://github.com/cswry/OSEDiff), which achieves SeeSR-level quality but is **over 30 times faster**.
-
-- **2024.03.10** Support [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), SeeSR can get a not bad image with only **2 steps** ⚡️. Please refer to [it](#Step-sd-turbo).
-
-- **2024.01.12** 🔥🔥🔥 Integrated to Try out [Replicate](https://replicate.com/lucataco/seesr) online demo ❤️ Thanks [lucataco](https://github.com/lucataco) for the implementation.
-
-- **2024.01.09** 🚀 Add Gradio demo, including turbo mode.
-
-- **2023.12.25** 🎅🎄🎅🎄 _Merry Christmas!!!_
-
-  - 🍺 Release SeeSR-SD2-Base, including the codes and pretrained models.
-
-  - 📏 We also release `RealLR200`. It includes 200 real-world low-resolution images.
-
-- **2023.11.28** Create this repo.
-
-### 📌 TODO
-
-- [ ] SeeSR-SDXL
-
-- [ ] SeeSR-SD2-Base-face,text
-
-- [ ] ~~SeeSR Acceleration~~
 
 ## 🔎 Overview framework
 
