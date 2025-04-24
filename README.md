@@ -1,6 +1,6 @@
 ## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
 
-Dehong Kong<sup>1,2, Fan Li<sup>3, 
+Dehong Kong<sup>1,2 Fan Li<sup>3, 
 
 Zhixin Wang<sup>3<sup>, Jiaqi Xu<sup>4<sup>, Renjing Pei<sup>3<sup>, Wenbo Li<sup>3<sup>, WenQi Ren<sup>1,2,5<sup>
 
