@@ -6,7 +6,7 @@ Dehong Kong<sup>1,2</sup>, Fan Li<sup>3</sup>, Zhixin Wang<sup>3</sup>, Jiaqi Xu
 <sup>2</sup>MoE Key Laboratory of Information Technology <sup>3</sup>Huawei Noah’s Ark Lab <sup>4</sup>The Chinese University of Hong Kong
 <sup>5</sup>Guangdong Provincial Key Laboratory of Information Security Technology
 
-:star:###Code is coming soon! 
+:star: Code is coming soon! 
 If DPIR is helpful to your images or projects, please help star this repo. Thanks!
 
 #### 🚩Accepted by CVPR2024
