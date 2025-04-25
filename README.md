@@ -53,6 +53,9 @@ You can put the testing images in the...
 
 If you have any questions, please feel free to contact: `kongdh@mail2.sysu.edu.cn`
 
+## :notebook: License
+
+This project is released under the [Apache 2.0 license](LICENSE).
 ## 🎓Citations
 
 If our code helps your research or work, please consider citing our paper. The following are BibTeX references:
