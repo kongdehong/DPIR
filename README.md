@@ -44,7 +44,7 @@ You can put the testing images in the...
 
 #### Step 3: Running testing command
 
-    python test_.py
+    python test.py
 
 ## 🌈 Train
 
@@ -67,6 +67,6 @@ If our code helps your research or work, please consider citing our paper. The f
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2504.17825}, 
-}
+    }
 
 
