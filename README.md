@@ -59,7 +59,7 @@ This project is released under the [Apache 2.0 license](LICENSE).
 
 If our code helps your research or work, please consider citing our paper. The following are BibTeX references:
 
-@misc{kong2025dualpromptingimagerestoration,
+    @misc{kong2025dualpromptingimagerestoration,
       title={Dual Prompting Image Restoration with Diffusion Transformers}, 
       author={Dehong Kong and Fan Li and Zhixin Wang and Jiaqi Xu and Renjing Pei and Wenbo Li and WenQi Ren},
       year={2025},
