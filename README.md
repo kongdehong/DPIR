@@ -1,4 +1,4 @@
-+## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
+## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
 
 <a href="https://arxiv.org/abs/2504.17825"><img src="https://img.shields.io/badge/ArXiv-2504.17825-red"></a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
@@ -54,5 +54,5 @@ If our code helps your research or work, please consider citing our paper. The f
     }
 
 ## 🌈 Acknowledgement
-This project is based on stable diffusion3, and ControlNext. Thanks for their awesome work.
-https://link.zhihu.com/?target=https%3A//huggingface.co/stabilityai/stable-diffusion-3-medium
+This project is based on [stable diffusion3](https://link.zhihu.com/?target=https%3A//huggingface.co/stabilityai/stable-diffusion-3-medium) and [ControlNeXt](https://github.com/dvlab-research/ControlNeXt). Thanks for their awesome work.
+
