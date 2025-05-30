@@ -1,4 +1,4 @@
-## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
++## Dual Prompting Image Restoration with Diffusion Transformers (CVPR2025)
 
 <a href="https://arxiv.org/abs/2504.17825"><img src="https://img.shields.io/badge/ArXiv-2504.17825-red"></a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
@@ -32,22 +32,6 @@ If DPIR is helpful to your images or projects, please help star this repo. Thank
     conda activate dpir
     pip install -r requirements.txt
 
-## 🚀 Quick Inference
-
-#### Step 1: Download the pretrained models
-
-- Download the pretrained models from...
-
-#### Step 2: Prepare testing data
-
-You can put the testing images in the...
-
-#### Step 3: Running testing command
-
-    python test.py
-
-## 🌈 Train
-
 ## 📧 Contact
 
 If you have any questions, please feel free to contact: `kongdh@mail2.sysu.edu.cn`
@@ -69,4 +53,6 @@ If our code helps your research or work, please consider citing our paper. The f
       url={https://arxiv.org/abs/2504.17825}, 
     }
 
-
+## 🌈 Acknowledgement
+This project is based on stable diffusion3, and ControlNext. Thanks for their awesome work.
+https://link.zhihu.com/?target=https%3A//huggingface.co/stabilityai/stable-diffusion-3-medium
