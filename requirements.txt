@@ -1,0 +1,16 @@
+accelerate==0.33.0
+deepspeed==0.12.3
+diffusers==0.29.2
+sentencepiece
+transformers
+einops
+pyarrow
+fastparquet
+omegaconf
+kornia
+k-diffusion
+open-clip-torch
+scikit-learn
+pandas
+opencv-python
+tqdm
