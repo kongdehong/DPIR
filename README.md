@@ -2,11 +2,11 @@
 
 <a href="https://arxiv.org/abs/2504.17825"><img src="https://img.shields.io/badge/ArXiv-2504.17825-red"></a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
-Dehong Kong<sup>1,2</sup>, Fan Li<sup>3</sup>, Zhixin Wang<sup>3</sup>, Jiaqi Xu<sup>4</sup>, Renjing Pei<sup>3</sup>, Wenbo Li<sup>3</sup>, WenQi Ren<sup>1,2,5</sup>
+> Dehong Kong<sup>1,2</sup>, Fan Li<sup>3</sup>, Zhixin Wang<sup>3</sup>, Jiaqi Xu<sup>4</sup>, Renjing Pei<sup>3</sup>, Wenbo Li<sup>3</sup>, WenQi Ren<sup>1,2,5</sup>
 
-<sup>1</sup>School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University
-<sup>2</sup>MoE Key Laboratory of Information Technology <sup>3</sup>Huawei Noah’s Ark Lab <sup>4</sup>The Chinese University of Hong Kong
-<sup>5</sup>Guangdong Provincial Key Laboratory of Information Security Technology
+> <sup>1</sup>School of Cyber Science and Technology, Shenzhen Campus of Sun Yat-sen University
+> <sup>2</sup>MoE Key Laboratory of Information Technology <sup>3</sup>Huawei Noah’s Ark Lab <sup>4</sup>The Chinese University of Hong Kong
+> <sup>5</sup>Guangdong Provincial Key Laboratory of Information Security Technology
 
 :star: Code is coming soon! 
 If DPIR is helpful to your images or projects, please help star this repo. Thanks!
