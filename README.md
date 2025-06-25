@@ -8,7 +8,7 @@
 > <sup>2</sup>MoE Key Laboratory of Information Technology <sup>3</sup>Huawei Noah’s Ark Lab <sup>4</sup>The Chinese University of Hong Kong
 > <sup>5</sup>Guangdong Provincial Key Laboratory of Information Security Technology
 
-:star: Code is coming soon! 
+:star: Some code is coming soon! However, due to the company's open-source policy, checkpoint of DPIR is still on the way.
 If DPIR is helpful to your images or projects, please help star this repo. Thanks!
 
 #### 🚩Accepted by CVPR2025
