@@ -32,6 +32,9 @@ If DPIR is helpful to your images or projects, please help star this repo. Thank
     conda activate dpir
     pip install -r requirements.txt
 
+## Reproduction Checkpoints
+Please refer to our reproduction [checkpoints](https://huggingface.co/DehongKong/dpir/tree/main).
+
 ## 📧 Contact
 
 If you have any questions, please feel free to contact: `kongdh@mail2.sysu.edu.cn`
